@@ -1,0 +1,210 @@
+$white				:	#fff;
+$black				:	#000;
+$midgrey			:	#a2aea2;
+$body				:	#efebf6;
+$color				:	#121212;
+$th				 : 	    #ccbcdc; 
+$dark-grey			:   #333; 
+$table-background	:	#eef6ee;    
+$table-background	:	#efebf6;    
+$table-bg-even		: 	#d9e6;
+$table-bg-odd		:	#ebeeeb;
+$color-really-pale	: 	#f3eff7;
+$color-shade		:	#aa9faa;  	
+$color-really-dark	: 	#8a8b88;
+* 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ /*======================================================================================================================================
+                                                    MAIN ELEMENTS
+=======================================================================================================================================*/ 
+body {
+  background-attachment: fixed;
+  background-color: cornsilk;
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: "Merriweather" sans-serif;
+  color: #414141;
+  font-size: 1em;
+  line-height: 1.5rem;
+  overflow: auto;
+}
+/*font: 100%/2 Verdana, Geneva, sans-serif  suggested in Anwar's course- saves on coding*/
+
+header, nav, main, section, aside, article, footer, hgroup {
+  display: block;
+  width: 100%;
+  padding: 0;
+  hyphens: auto;
+}
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #b1f8f7; 
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  }
+/*========================================================================================================================================
+                                          IDS AND CLASSES
+==================================================================================================================================== */  
+.header-wrap {
+    
+ background-color: #b1f8f7;  
+}
+#wrap {
+  background-color: #83edce;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+
+.parish-name-left, .parish-name-right {
+}
+#main-center {
+    margin: 1rem;
+}
+.main {
+    margin: 1rem;
+    padding: 1rem;
+}
+/*========================================================================================================================================
+                                          HEADERS AND P
+==================================================================================================================================== */  
+h1, h2, h3, h4, h5 {
+   font-family: "Lora" Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif" 
+    
+}
+h5 {
+    padding: 1rem;
+    font-style: italic;
+    margin: 0;
+}
+    
+
+/*========================================================================================================================================
+                                          NAV AND LINKS
+==================================================================================================================================== */  
+a:hover, a:active {
+    background-color: #99ECF3;
+}
+/*========================================================================================================================================
+                                          IMG
+==================================================================================================================================== */  
+figure {
+    text-align: center; 
+    }
+
+figcaption {
+  background-color: #dee3de; }
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-weight: 800;
+}
+.single-img {
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid black;
+    width: 250px;
+    height: 200px;
+    background-color: #9DE7F0;
+}
+img:hover {
+    opacity: .5;
+    transition: .9s; }
+    
+.img-small {
+    width: 90%;
+}
+/*========================================================================================================================================
+                                          TABLES
+==================================================================================================================================== */  table {
+  background-color: #eef6ee;
+  border: 1px solid #7a7a7a;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 0.3em;
+  clear: both; }
+
+th {
+  background-color: #dee3de;
+  background-color: #A3B7A3;
+  border: 1px solid #000;
+  text-align: left;
+  padding: 0.2em; }
+
+td {
+  padding: 0.2em;
+  background-color: #dee3de;
+  border: 1px solid #000034; }
+
+td.red {
+  color: #f00; }
+
+tr {
+  background-color: #eef6ee;
+  border: 1px solid #dcbf5e; }
+
+tr:nth-child(odd) {
+  background-color: #ebeeeb; }
+tr:nth-child(even) {
+  background-color: #acb2ac; }
+
+tr.red {
+  color: #f00; }
+
+.odd {
+  background-color: white; }
+
+.even {
+  background-color: black; }
+
+dl, dd {
+padding: 0.3em;      
+  font-size: 0.7em;
+}
+.tr:nth-child(odd){
+  background-color:  cornsilk !important;
+}
+/*========================================================================================================================================
+                                          FOOTERS
+==================================================================================================================================== */  
+footer {
+	background-color: palegoldenrod;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                          MEDIA QUERIES
+========================================================================================================================================================================= */  
+@media screen and (min-width: 780px) {
+  #wrap {
+    margin: 2em auto;
+    /*this centres the stuff*/
+    width: 70%;
+    /*min-height: (calc(100vh-whatever the footer height eg. the footer is! e.g. 89px or thereeabouts);*/
+    height: 100%;
+      max-width: 1000px;
+      overflow: auto; }
+
+.parish-name-left {
+float: left;
+    padding-left: 4rem;
+}
+.parish-name-right {
+    float: right;
+    padding-right: 4rem;
+}
+
+
+}
